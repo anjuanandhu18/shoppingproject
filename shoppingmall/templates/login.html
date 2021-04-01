@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+.style1 {
+	color: #000000;
+	font-size: 15px;
+}
+.style2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000099;
+}
+body
+{
+background-image:url("{% static 'doctr.jpg' %}");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+</style>
+</head>
+<body>
+
+<form id="form1" name="form1" method="post" action="">
+  <table width="300" border="1" align="center" bordercolor="#0033FF" >
+    <caption>
+      <span class="style2">LOGIN <br />
+      </span><br />
+      <span class="style1">Please enter your name and password to log in      </span>
+    </caption>
+    <tr>
+      <th width="104" scope="row">Username </th>
+      <td width="522"><label>
+      <input name="UserName" type="text" class="style1" />
+      </label></td>
+    </tr>
+    <tr>
+      <th scope="row">Password</th>
+      <td><label>
+        <input name="Password" type="password" class="style1" />
+      </label></td>
+    </tr>
+    <tr>
+      <th colspan="2" scope="row"><label>
+       <input name="submit" type="submit" class="style1" value="Login"  onclick="{% url 'products:home' %}"> />  <br>Don't have an account yet?<br> <a href="{% url 'products:reg' %}">Create an account</a>
+      </label></th>
+    </tr>
+
+  </table>
+
+</form>
+<a href="{% url 'products:home' %}"><button>hai</button></a>
+</body>
+</html>
+
+
+

@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style type="text/css">
+    *{
+    margin:0;
+    padding:0;
+    }
+    body
+    {
+    background-image:url("{% static 'org.jpg' %}");
+    background-repeat:no-repeat;
+
+    background-size:cover;
+}
+.style1 {
+padding:2px;
+	font-size: 18px;
+	font-weight: bold;
+	color: tomato;
+	}
+
+  </style>
+</head>
+<body>
+
+
+<form id="form1" name="form1" method="post" action="" >
+
+<table width="300" border="1" align="center" >
+  <caption class="style1">
+    PATIENT REGISTRATION
+  </caption>
+  <tr>
+    <th width="67" scope="row" class="style1">First Name </th>
+    <td width="336">
+      <label>
+        <input type="text" name="textfield" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Last Name </th>
+    <td>
+      <label>
+        <input type="text" name="textfield2" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Age</th>
+    <td>
+      <label>
+        <input type="date" name="textfield11" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Gender</th>
+    <td>
+      <p>
+        <label>
+          <input type="radio" name="RadioGroup1" value="radio" />
+          male</label>
+
+        <label>
+          <input name="RadioGroup1" type="radio" value="radio" checked="checked" />
+          female</label>
+        <br />
+      </p>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Ph.No</th>
+    <td>
+      <label>
+        <input type="tel" name="textfield3" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Email</th>
+    <td>
+      <label>
+        <input type="email" name="textfield4" />
+        </label>    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="style1">Full Address </th>
+    <td>
+      <label>
+        <textarea name="textarea"></textarea>
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">City</th>
+    <td>
+      <label>
+        <input type="text" name="textfield7" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Pin</th>
+    <td>
+      <label>
+        <input type="text" name="textfield8" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">State</th>
+    <td>
+      <label>
+        <input type="text" name="textfield9" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Password</th>
+    <td>
+      <label>
+        <input type="password" name="textfield5" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row" class="style1">Confirm Password </th>
+    <td>
+      <label>
+        <input type="text" name="textfield6" />
+        </label>    </td>
+  </tr>
+  <tr>
+    <th scope="row">&nbsp;</th>
+    <td>
+      <label>
+      <input type="submit" name="Submit" value="Submit" />
+        </label>
+      <label>
+      <input type="submit" name="Submit2" value="Reset" />
+      </label>    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
